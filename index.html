@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Wictionary dictionary</title>
+             <script src="jquery-3.7.1.min.js"></script>
+             <script>
+$(document).ready(function(){
+       $('#btn').click(function(){
+              $('#ctn').fadeToggle();
+       })
+})
+$(document).ready(function(){
+       $('#btn1').click(function(){
+              $('#r2').fadeToggle();
+       })
+})
+             </script>
+       <style>
+              *body{
+               margin: 0px;
+               padding: 0px;
+              }
+              #main{
+                 display: flex;    
+              }
+              #add{
+                     margin-top: 20px;
+                     height: 300px;
+                   
+              }
+              #click{
+                    
+                     color: black;
+                     height: 33.5px;
+                     
+                     border: 1px solid black;
+                     font-weight: 800;
+                     margin-top: 20px;
+              }
+              #search{
+                     height: 30px;
+                     width: 400px;
+                     border: 1px solid black;
+                     font-weight: 300;
+              
+              margin-left: 350px;
+              margin-top: 20px;
+              padding-left: 30px;
+              }
+              #add{
+                     font-family:cursive;
+                    font-weight: 700;
+                    position: absolute;
+                    margin-top: 200px;
+                    margin-left: 350px;
+                    width: 900px;
+                    
+              }
+              #add1{
+                     font-family:cursive;
+                    font-weight: 700;
+                    position: absolute;
+                    margin-top: 100px;
+                    margin-left: 350px;
+                    display: flex;
+              }
+              #add1 p{
+                     position: absolute;
+                     color: black;
+                   margin-left: 800px;
+                   margin-top: 18px;
+                   color: rgba(0, 0, 255, 0.661);
+                    
+              }
+              #hello{
+                    
+                 margin-left: 150px; 
+                 position: absolute;   
+              }
+              .ri-search-line{
+                     position: absolute;
+                     margin-top: 28px;
+                     margin-left: 360px;
+                     font-weight: 600;
+              }
+              .ri-align-justify{
+                     position: absolute;
+                     margin-top: 25px;
+                     margin-left: 20px;
+                     font-size: x-large;
+              }
+              p{
+                     font-family: Arial, Helvetica, sans-serif;
+                     margin-left: 40px;
+                   margin-top: 28px;
+                   padding-right: 40px;
+                   color: rgba(0, 0, 255, 0.661);
+                   cursor: pointer;
+              }
+              .ri-list-check{
+                   
+                     margin-left: 15px;
+                     margin-top: 28px;
+              }
+              #img{
+                     height: 60px;
+                     position: absolute;
+                     margin-left: 70px;
+                     margin-top: 10px;
+              }
+              #content{
+                position: absolute;
+                margin-top: 100px;
+                display: flex;
+                margin-left: 40px;
+              }
+              #btn{
+               height: 25px;
+               margin-top: 15px;
+               margin-left: 10px;
+              }
+              #beginning{
+                     position: absolute;
+                     margin-top: 80px;
+                    
+              }
+#ctn{
+       position: absolute;
+       margin-top: 130px;
+       margin-right: 110px;
+       display: none;
+       
+}
+#add1 img{
+       position: absolute;
+       height: 30px;
+       margin-left: 750px;
+       margin-top: 16px;
+}
+#rightcontainer{
+       position: absolute;
+       margin-top: 140px;
+       
+       margin-left: 1300px;
+}
+#r2{
+    
+}
+#width{
+       color: black;
+       font-size: larger;
+      
+       margin-left: 20px;
+}
+#text{
+      color: black;
+       font-size: larger;
+      
+       margin-left: 20px;    
+}
+       
+       </style>
+       <link
+       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+       rel="stylesheet"
+   />
+</head>
+<body>
+       <div id="main">
+              <i  class="ri-align-justify" ></i>
+          <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFvMyEl_J04MzW-cBQjpt9Al0RNRT_drJ8KQ&s" alt="Wictionary">
+              <h4 id="hello">Wiktionary <br>The Free Dictionary</h4>
+              <i class="ri-search-line"></i>
+       <input id="search" type="text" placeholder=  " search Wiktionary">
+       <button id="click">Search</button>
+       <p id="Donation" style="cursor: pointer;" onclick="load()">Donation</p>
+       <p class="preferance">preferance</p>
+       <p class="create">Create account</p>
+       <p class="login" onclick="load1()">Log in</p>
+       <i class="ri-list-check"></i>
+       <div id="content">
+               <h3>content</h3><button id="btn">hiden</button>
+              <h4 id="beginning">Beginning <br>
+              English </h4>
+              <p id="ctn">Alternative forms<br>
+                     Etymology<br><br>
+                     Pronunciation<br><br>
+                     Verb<br><br>
+                     Adjective<br><br>
+                      Adverb<br><br>
+                     Derived terms<br><br>
+                     </p>
+              
+       </div> 
+       
+       <div id="add1" >
+           <h2 style="color: green;"> according to british english dictionary</h2>
+           <img src="https://cdn-icons-png.flaticon.com/512/888/888928.png" alt="language img">
+          <p>  33 languages</p>
+           
+       </div>
+       <div id="rightcontainer">
+              <h3>
+                     Appearance
+              </h3>
+              <button id="btn1">hiden</button>
+              <div id="r2">   
+                      <p style="margin-left: 20px;" id="text">Text</p>
+              <p>small</p>
+              <p >standard</p>
+              <p>large</p>
+              <p id="width">width</p>
+              <p>standard</p>
+              <p>wide</p>
+             </div>
+          
+       </div>
+       <div id="add" >
+              <h2></h2>
+              
+          </div>
+          
+
+</div>
+<!-- <div id="crp">
+
+</div> -->
+
+       <script src="dictionry.js"></script>
+</body>
+</html>
